@@ -21,9 +21,13 @@ if not (args.a or args.l):
 
 API = mt(key=environ.get('ENV'))
 
-if args.l:
+if args.l and args.r:
     stool = input('What do you want to lookup?\n>> ')
-    print(API.lookup(command=args.l[0],argument=stool))
+    print(API.lookup(command=args.l[0], argument=stool, RAW=True))
+    quit()
+elif args.l:
+    stool = input('What do you want to lookup?\n>> ')
+    print(API.lookup(command=args.l[0], argument=stool))
     quit()
 
 run = getattr(API, args.a[0])
