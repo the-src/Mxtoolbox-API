@@ -47,4 +47,4 @@ What do you want to lookup?
   ],
 ```
 
-For questions (email)[mailto:southrain@softsec.xyz] me
+For questions [email](mailto:southrain@softsec.xyz) me
